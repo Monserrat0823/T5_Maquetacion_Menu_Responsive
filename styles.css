@@ -1,0 +1,257 @@
+:root {
+    --Gris: #f3f3f3;
+    --Verde: #6cb500;
+    --tipo_arimo: 'Arimo', sans-serif;
+    --negro: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--tipo_arimo);
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*border: 3px red solid;*/
+}
+
+.centrar {
+    text-align: center;
+}
+
+.margen {
+    padding: 15px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.cont_logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 50%;
+}
+
+.cont_logo figure {
+    width: 70%;
+    height: 80px;
+}
+
+.cont_logo img {
+    width: auto;
+    padding: 10px;
+    height: 100%;
+}
+
+.menucito {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 29%;
+}
+
+.menucito a {
+    color: var(--Verde);
+}
+
+nav {
+    width: 45%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--negro);
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.banner figure {
+    width: 100%;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont_cultivo {
+    width: 50%;
+    position: absolute;
+    color: white;
+    font-size: 52px;
+    line-height: 55px;
+    padding-right: 30px;
+    top: 20%;
+    z-index: 99;
+    left: max(20px, calc((100% - 1200px) / 2));
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.cajita {
+    width: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--Gris);
+}
+
+.icono {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono figure {
+    width: 100%;
+    height: 100%;
+}
+
+.icono img {
+    padding: 10px;
+    width: 100%;
+}
+
+.verde {
+    color: var(--Verde);
+}
+
+footer{
+    height:150px;
+    width: 100%;
+    background-color: var(--Verde);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+/*tablet*/
+@media (max-width:680px) {
+    header {
+        padding: 10px;
+        width: 95%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cont_logo {
+        width: 100%;
+    }
+
+    .menucito {
+        display: flex;
+    }
+
+    .menucito a {
+        font-size: 30px;
+    }
+
+    nav {
+        justify-content: center;
+        width: 100%;
+        background-color: var(--Gris_Menu);
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        list-style: none;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-bottom: 2px dotted #140202;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: 20px 10px;
+    }
+
+    .banner {
+        height: 480px;
+        overflow: hidden;
+    }
+
+    .banner img {
+        object-position: center;
+    }
+
+    .cont_cultivo {
+        width: 90%;
+        font-size: 35px;
+        line-height: 50px;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content:stretch;
+        gap: 20px;
+    }
+
+    .cajita {
+        width: 90%;
+    }
+
+}

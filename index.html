@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tarea 5 Maquetación Menu Responsive</title>
+</head>
+
+<body>
+
+    <header class="ancho">
+        <div class="cont_logo">
+            <figure>
+                <img src="imagenes/logo_arriba.png" alt="">
+            </figure>
+
+            <div class="menucito" id="btn_menu">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+
+        <nav class="ancho" id="cajamenu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nuestros Productos</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <figure class="banner">
+        <img src="imagenes/foto_slide.jpg" alt="">
+        <div class="ancho cont_cultivo">
+            <p>
+                Cultivamos verduras orgánicas y las traemos a las traemos a tu mesa
+            </p>
+        </div>
+    </figure>
+
+    <div class="ancho margen centrar">
+        <h2>Nuestros servicios</h2>
+        <p class="verde">Lo que ofrecemos</p>
+
+        <section class="info">
+            <article class="cajita">
+                <figure class="icono"><img src="imagenes/icono1.png" alt=""></figure>
+                <h3 class="verde">Ganado Vacuno</h3>
+                <p>Carne de res producida sin ingeniería
+                    genética, uso de radiación ionizante o lodos
+                    de depuradora</p>
+            </article>
+
+            <article class="cajita">
+                <figure class="icono"><img src="imagenes/icono2.png" alt=""></figure>
+                <h3 class="verde">Productos Lácteos</h3>
+                <p>Los productos lácteos como la leche, el
+                    queso y el yogur contienen los nutrientes que
+                    su cuerpo necesita.</p>
+            </article>
+
+            <article class="cajita">
+                <figure class="icono"><img src="imagenes/icono3.png" alt=""></figure>
+                <h3 class="verde">Frutas de la huerta</h3>
+                <p>Cubre todo lo que necesita saber para
+                    cultivar y comercializar con éxito sus
+                    propias frutas orgánicas de huerta.</p>
+            </article>
+        </section>
+    </div>
+    <br>
+
+    <footer>
+        <figure >
+            <img src="imagenes/logo_abajo.png" alt="">
+        </figure>
+    </footer>
+
+</body>
+<script>
+    $("#btn_menu").click(function () {
+        !$("#cajamenu").slideToggle();
+
+    })
+</script>
+
+</html>
