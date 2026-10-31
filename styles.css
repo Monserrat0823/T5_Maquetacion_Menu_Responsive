@@ -180,8 +180,8 @@ footer{
     align-items: center;
 }
 
-/*tablet*/
-@media (max-width:680px) {
+/*phone*/
+@media (max-width:480px) {
     header {
         padding: 10px;
         width: 95%;
